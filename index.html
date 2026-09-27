@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="사용자에게 더 나은 경험을 만드는 프론트엔드 개발자 EJ.Ban의 포트폴리오입니다."
+    />
+    <meta name="theme-color" content="#f7f7f4" />
+    <title>EJ.Ban — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Gaegu:wght@300;400;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navigation container" aria-label="주요 메뉴">
+        <a class="brand" href="#home" aria-label="EJ.Ban 포트폴리오 홈">EJ.Ban<span>.</span></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="primary-menu">
+          <a href="#about">소개</a>
+          <a href="#work">프로젝트</a>
+          <a href="#contact">연락하기</a>
+          <a class="nav-availability" href="#contact">
+            <span class="availability-dot"></span>
+            새로운 기회에 열려 있어요
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> HELLO, I'M EJ.BAN</p>
+          <h1 id="hero-title">좋은 경험을<br />만드는 <span>개발자.</span></h1>
+          <p class="hero-description">
+            복잡한 문제를 단순한 화면으로 풀어내는<br class="desktop-break" />
+            프론트엔드 개발자 <strong>EJ.Ban</strong>입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">
+              프로젝트 보기 <span aria-hidden="true">↘</span>
+            </a>
+            <a class="text-link" href="#contact">함께 이야기해요 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="EJ.Ban을 소개하는 그래픽" role="img">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div>
+          <div class="art-card">
+            <span class="art-card-label">CURRENT FOCUS</span>
+            <span class="art-card-title">디테일에<br />진심을 담다.</span>
+            <span class="art-card-foot">BUILDING WITH CARE <span>✳</span></span>
+          </div>
+          <span class="art-coordinate">37° 33' 59.9" N<br />126° 58' 41.2" E</span>
+          <span class="art-side-note">DESIGN · CODE · EXPERIENCE</span>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="about section container" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT ME</p>
+          <span class="section-index">01 / ABOUT</span>
+        </div>
+        <div class="about-content">
+          <h2 id="about-title">기술과 사람 사이,<br />더 나은 <span>연결</span>을 고민합니다.</h2>
+          <div class="about-details">
+            <p>
+              웹의 작은 불편을 발견하고, 누구나 편하게 쓸 수 있는 제품으로 바꾸는 일을
+              좋아합니다. 탄탄한 기본기와 섬세한 인터랙션으로 아이디어를 현실로 만듭니다.
+            </p>
+            <div class="about-meta">
+              <div>
+                <span class="meta-label">BASED IN</span>
+                <span>Seoul, South Korea</span>
+              </div>
+              <div>
+                <span class="meta-label">SPECIALTY</span>
+                <span>Frontend · UI Engineering</span>
+              </div>
+              <div>
+                <span class="meta-label">EXPERIENCE</span>
+                <span>3+ years building for the web</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> SELECTED WORK</p>
+              <h2 class="work-heading" id="work-title">만들어 온 것들<span>.</span></h2>
+            </div>
+            <span class="section-index">02 / PROJECTS</span>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card-featured">
+              <a class="project-visual visual-dashboard" href="#contact" aria-label="모아 대시보드 프로젝트 문의하기">
+                <div class="dashboard-window">
+                  <div class="window-top"><span></span><span></span><span></span><b>moa / overview</b></div>
+                  <div class="dashboard-content">
+                    <div class="dashboard-greeting">좋은 아침이에요, 민준님 <span>✳</span></div>
+                    <div class="dashboard-stat-row">
+                      <div class="dashboard-stat"><small>이번 달 저축</small><strong>₩ 1,240,000</strong><i>↗ 12.8%</i></div>
+                      <div class="dashboard-stat stat-muted"><small>목표 달성률</small><strong>68%</strong><div class="mini-progress"><span></span></div></div>
+                    </div>
+                    <div class="chart-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                    <div class="chart-labels"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div>
+                  </div>
+                </div>
+                <span class="visual-caption">PERSONAL FINANCE, MADE SIMPLE</span>
+              </a>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">WEB APP <span>·</span> 2025</p>
+                  <h3>모아 — 나를 위한 가계부</h3>
+                </div>
+                <a class="project-arrow" href="#contact" aria-label="모아 프로젝트 자세히 보기">↗</a>
+                <p class="project-description">흩어진 지출을 한눈에. 습관 형성을 돕는 개인 금융 대시보드.</p>
+                <div class="tag-list"><span>React</span><span>TypeScript</span><span>Chart.js</span></div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a class="project-visual visual-green" href="#contact" aria-label="틈 프로젝트 문의하기">
+                <div class="tune-ui">
+                  <div class="tune-top"><span>틈</span><span>● ● ●</span></div>
+                  <div class="tune-copy"><span>오늘의 작은 발견</span><strong>잠깐, 여기<br />머물러 볼까요?</strong></div>
+                  <div class="tune-image"><span>✳</span><i></i><b></b></div>
+                  <div class="tune-bottom"><span>숨 고르기 · 5분</span><span>↗</span></div>
+                </div>
+                <span class="visual-caption">A MOMENT JUST FOR YOU</span>
+              </a>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">MOBILE WEB <span>·</span> 2024</p>
+                  <h3>틈 — 마음을 돌보는 시간</h3>
+                </div>
+                <a class="project-arrow" href="#contact" aria-label="틈 프로젝트 자세히 보기">↗</a>
+                <p class="project-description">바쁜 하루 속 나만의 쉼표를 찾는 마이크로 웰니스 서비스.</p>
+                <div class="tag-list"><span>JavaScript</span><span>CSS</span><span>Figma</span></div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a class="project-visual visual-lilac" href="#contact" aria-label="페이지룸 프로젝트 문의하기">
+                <div class="page-ui">
+                  <div class="page-top"><span>page.room</span><span>COLLECTION NO. 08</span></div>
+                  <div class="page-cover"><span>THE<br />QUIET<br />HOUR</span><i></i><b></b></div>
+                  <div class="page-bottom"><span>읽고, 기록하고, 나누는 공간</span><span>01 — 08</span></div>
+                </div>
+                <span class="visual-caption">A HOME FOR YOUR NEXT READ</span>
+              </a>
+              <div class="project-info">
+                <div>
+                  <p class="project-type">E-COMMERCE <span>·</span> 2024</p>
+                  <h3>페이지룸 — 독립 서점 큐레이션</h3>
+                </div>
+                <a class="project-arrow" href="#contact" aria-label="페이지룸 프로젝트 자세히 보기">↗</a>
+                <p class="project-description">취향에 맞는 책을 발견하고 기록하는 온라인 북 큐레이션 스토어.</p>
+                <div class="tag-list"><span>Next.js</span><span>SCSS</span><span>Shopify</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section container" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> HAVE A PROJECT IN MIND?</p>
+          <span class="section-index">03 / CONTACT</span>
+        </div>
+        <div class="contact-content">
+          <h2 id="contact-title">좋은 일을<br />함께 <span>만들어 봐요.</span></h2>
+          <div class="contact-details">
+            <p>새로운 아이디어, 협업 제안, 가벼운 인사까지<br />언제든 편하게 연락 주세요.</p>
+            <div class="contact-email-row">
+              <a class="contact-email" href="mailto:hello@minjun.dev">hello@minjun.dev</a>
+              <button class="copy-button" type="button" aria-label="이메일 주소 복사" data-copy-email="hello@minjun.dev">복사 <span aria-hidden="true">↗</span></button>
+            </div>
+            <p class="copy-feedback" aria-live="polite"></p>
+            <div class="social-links">
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home" aria-label="페이지 맨 위로">MJ<span>.</span></a>
+        <span>Designed & built with care by EJ.Ban.</span>
+        <span>© <span id="current-year"></span> ALL RIGHTS RESERVED</span>
+      </div>
+    </footer>
+  </body>
+</html>
