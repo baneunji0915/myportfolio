@@ -4,7 +4,11 @@
   --ink: #20211f;
   --muted: #777a73;
   --line: #dedfd9;
+<<<<<<< HEAD
   --accent: #777777;
+=======
+  --accent: #e7a9e3;
+>>>>>>> testing
   --font-body: "Manrope", "Noto Sans KR", sans-serif;
   --font-korean: "Noto Sans KR", sans-serif;
   --font-mono: "DM Mono", monospace;
@@ -476,6 +480,18 @@ button {
   transition: filter 200ms ease;
 }
 
+.project-visual-trigger {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 .project-visual:hover {
   filter: saturate(1.08);
 }
@@ -856,6 +872,10 @@ button {
   justify-content: center;
   border: 1px solid #d4d6cf;
   border-radius: 50%;
+  padding: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
   font-size: 14px;
   transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
 }
@@ -864,6 +884,13 @@ button {
   border-color: var(--ink);
   background: var(--ink);
   color: white;
+}
+
+.project-visual-trigger:focus-visible,
+.project-arrow:focus-visible,
+.project-dialog-close:focus-visible {
+  outline: 2px solid #7567a8;
+  outline-offset: 4px;
 }
 
 .project-description {
@@ -886,6 +913,105 @@ button {
   border-radius: 20px;
   color: #696d64;
   font-size: 9px;
+}
+
+.project-dialog {
+  width: min(560px, calc(100% - 32px));
+  max-width: none;
+  max-height: min(90vh, 760px);
+  padding: 0;
+  overflow: auto;
+  border: 1px solid #d4d6cf;
+  border-radius: 8px;
+  background: #f7f7f4;
+  color: #33352f;
+  box-shadow: 0 24px 80px rgb(24 27 22 / 25%);
+}
+
+.project-dialog::backdrop {
+  background: rgb(28 31 26 / 58%);
+  backdrop-filter: blur(3px);
+}
+
+.project-dialog-content {
+  position: relative;
+  padding: 34px;
+}
+
+.project-dialog-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid #d4d6cf;
+  border-radius: 50%;
+  background: transparent;
+  color: #33352f;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.project-dialog-eyebrow {
+  margin: 0 42px 10px 0;
+  color: #77796f;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.project-dialog-title {
+  margin: 0 36px 10px 0;
+  color: #33352f;
+  font-size: 28px;
+  line-height: 1.35;
+}
+
+.project-dialog-description,
+.project-dialog-section p {
+  margin: 0;
+  color: #55584f;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.project-dialog-example-note {
+  margin: 20px 0 24px;
+  padding: 12px 14px;
+  border-left: 3px solid #9b8bb4;
+  background: #eeefe9;
+  color: #55584f;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.project-dialog-section + .project-dialog-section {
+  margin-top: 20px;
+}
+
+.project-dialog-section h3 {
+  margin: 0 0 7px;
+  color: #33352f;
+  font-size: 18px;
+}
+
+.project-dialog-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-dialog-technologies li {
+  padding: 6px 10px;
+  border: 1px solid #d4d6cf;
+  border-radius: 20px;
+  color: #55584f;
+  font-size: 14px;
 }
 
 .contact {
@@ -1210,6 +1336,14 @@ button {
 
   .page-cover {
     height: 145px;
+  }
+
+  .project-dialog-content {
+    padding: 28px 22px;
+  }
+
+  .project-dialog-title {
+    font-size: 24px;
   }
 }
 

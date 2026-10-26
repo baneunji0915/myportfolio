@@ -117,7 +117,7 @@
 
           <div class="project-grid">
             <article class="project-card project-card-featured">
-              <a class="project-visual visual-dashboard" href="#contact" aria-label="모아 대시보드 프로젝트 문의하기">
+              <div class="project-visual visual-dashboard">
                 <div class="dashboard-window">
                   <div class="window-top"><span></span><span></span><span></span><b>moa / overview</b></div>
                   <div class="dashboard-content">
@@ -131,20 +131,21 @@
                   </div>
                 </div>
                 <span class="visual-caption">PERSONAL FINANCE, MADE SIMPLE</span>
-              </a>
+                <button class="project-visual-trigger" type="button" data-project-index="0" aria-haspopup="dialog" aria-label="모아 프로젝트 상세 정보 보기"></button>
+              </div>
               <div class="project-info">
                 <div>
                   <p class="project-type">WEB APP <span>·</span> 2025</p>
                   <h3>모아 — 나를 위한 가계부</h3>
                 </div>
-                <a class="project-arrow" href="#contact" aria-label="모아 프로젝트 자세히 보기">↗</a>
+                <button class="project-arrow" type="button" data-project-index="0" aria-haspopup="dialog" aria-label="모아 프로젝트 상세 정보 보기">↗</button>
                 <p class="project-description">흩어진 지출을 한눈에. 습관 형성을 돕는 개인 금융 대시보드.</p>
                 <div class="tag-list"><span>React</span><span>TypeScript</span><span>Chart.js</span></div>
               </div>
             </article>
 
             <article class="project-card">
-              <a class="project-visual visual-green" href="#contact" aria-label="틈 프로젝트 문의하기">
+              <div class="project-visual visual-green">
                 <div class="tune-ui">
                   <div class="tune-top"><span>틈</span><span>● ● ●</span></div>
                   <div class="tune-copy"><span>오늘의 작은 발견</span><strong>잠깐, 여기<br />머물러 볼까요?</strong></div>
@@ -152,33 +153,35 @@
                   <div class="tune-bottom"><span>숨 고르기 · 5분</span><span>↗</span></div>
                 </div>
                 <span class="visual-caption">A MOMENT JUST FOR YOU</span>
-              </a>
+                <button class="project-visual-trigger" type="button" data-project-index="1" aria-haspopup="dialog" aria-label="틈 프로젝트 상세 정보 보기"></button>
+              </div>
               <div class="project-info">
                 <div>
                   <p class="project-type">MOBILE WEB <span>·</span> 2024</p>
                   <h3>틈 — 마음을 돌보는 시간</h3>
                 </div>
-                <a class="project-arrow" href="#contact" aria-label="틈 프로젝트 자세히 보기">↗</a>
+                <button class="project-arrow" type="button" data-project-index="1" aria-haspopup="dialog" aria-label="틈 프로젝트 상세 정보 보기">↗</button>
                 <p class="project-description">바쁜 하루 속 나만의 쉼표를 찾는 마이크로 웰니스 서비스.</p>
                 <div class="tag-list"><span>JavaScript</span><span>CSS</span><span>Figma</span></div>
               </div>
             </article>
 
             <article class="project-card">
-              <a class="project-visual visual-lilac" href="#contact" aria-label="페이지룸 프로젝트 문의하기">
+              <div class="project-visual visual-lilac">
                 <div class="page-ui">
                   <div class="page-top"><span>page.room</span><span>COLLECTION NO. 08</span></div>
                   <div class="page-cover"><span>THE<br />QUIET<br />HOUR</span><i></i><b></b></div>
                   <div class="page-bottom"><span>읽고, 기록하고, 나누는 공간</span><span>01 — 08</span></div>
                 </div>
                 <span class="visual-caption">A HOME FOR YOUR NEXT READ</span>
-              </a>
+                <button class="project-visual-trigger" type="button" data-project-index="2" aria-haspopup="dialog" aria-label="페이지룸 프로젝트 상세 정보 보기"></button>
+              </div>
               <div class="project-info">
                 <div>
                   <p class="project-type">E-COMMERCE <span>·</span> 2024</p>
                   <h3>페이지룸 — 독립 서점 큐레이션</h3>
                 </div>
-                <a class="project-arrow" href="#contact" aria-label="페이지룸 프로젝트 자세히 보기">↗</a>
+                <button class="project-arrow" type="button" data-project-index="2" aria-haspopup="dialog" aria-label="페이지룸 프로젝트 상세 정보 보기">↗</button>
                 <p class="project-description">취향에 맞는 책을 발견하고 기록하는 온라인 북 큐레이션 스토어.</p>
                 <div class="tag-list"><span>Next.js</span><span>SCSS</span><span>Shopify</span></div>
               </div>
@@ -209,6 +212,28 @@
         </div>
       </section>
     </main>
+
+    <dialog class="project-dialog" aria-labelledby="project-dialog-title">
+      <div class="project-dialog-content">
+        <button class="project-dialog-close" type="button" aria-label="프로젝트 상세 정보 닫기">×</button>
+        <p class="project-dialog-eyebrow">PROJECT DETAILS · EXAMPLE</p>
+        <h2 class="project-dialog-title" id="project-dialog-title" tabindex="-1"></h2>
+        <p class="project-dialog-description"></p>
+        <p class="project-dialog-example-note">아래 역할과 주요 성과는 포트폴리오 원본에 상세 정보가 없어 작성한 예시 데이터입니다. 실제 프로젝트 정보로 바꿔 주세요.</p>
+        <section class="project-dialog-section" aria-labelledby="project-dialog-role-label">
+          <h3 id="project-dialog-role-label">담당 역할</h3>
+          <p class="project-dialog-role"></p>
+        </section>
+        <section class="project-dialog-section" aria-labelledby="project-dialog-tech-label">
+          <h3 id="project-dialog-tech-label">사용 기술</h3>
+          <ul class="project-dialog-technologies"></ul>
+        </section>
+        <section class="project-dialog-section" aria-labelledby="project-dialog-results-label">
+          <h3 id="project-dialog-results-label">주요 성과</h3>
+          <p class="project-dialog-results"></p>
+        </section>
+      </div>
+    </dialog>
 
     <footer class="site-footer">
       <div class="container footer-inner">
